@@ -1,37 +1,232 @@
-<!doctype html>
-<html>
-    <head>
-        <title>City of Westminster Council</title>
-        <link rel="stylesheet" href="style. css">
-    </head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>British Values Hub – City of Westminster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background-color: #ffffff;
+      border-bottom: 2px solid #d0d0d0;
+      padding: 15px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .logo span {
+      display: block;
+      line-height: 1.2;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 10px;
+      font-size: 0.9rem;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      color: #005ea5;
+      border: 1px solid #005ea5;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #005ea5;
+      padding: 10px 5%;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 30px 5%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .content-box {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      flex: 1 1 280px;
+      min-width: 260px;
+    }
+
+    .content-box h1 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      color: #005ea5;
+    }
+
+    .content-box p {
+      line-height: 1.5;
+      margin-bottom: 10px;
+      font-size: 0.98rem;
+    }
+
+    .flag-box {
+      flex: 0 0 280px;
+      min-width: 260px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flag {
+      width: 100%;
+      max-width: 320px;
+      aspect-ratio: 3 / 2;
+      background: linear-gradient(135deg, #00247d 0 50%, #cf142b 50% 100%);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Simple stylised Union Jack effect */
+    .flag::before,
+    .flag::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, transparent 45%, #ffffff 45% 55%, transparent 55%),
+        linear-gradient(180deg, transparent 45%, #ffffff 45% 55%, transparent 55%);
+      mix-blend-mode: screen;
+    }
+
+    .flag::after {
+      background:
+        linear-gradient(90deg, transparent 47%, #cf142b 47% 53%, transparent 53%),
+        linear-gradient(180deg, transparent 47%, #cf142b 47% 53%, transparent 53%);
+      mix-blend-mode: screen;
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 20px 5%;
+      background-color: #ffffff;
+      border-top: 2px solid #d0d0d0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    footer h2 {
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+      color: #005ea5;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .social-icons {
+        align-self: flex-start;
+      }
+    }
+  </style>
+</head>
 <body>
-    
-<div class="whole_header">
+  <header>
     <div class="logo">
-        <img src="zack.png"id="logo1">
+      <!-- You can replace this text with an actual logo image if you have one -->
+      <span>City of Westminster</span>
     </div>
-</div>
+    <div class="social-icons">
+      <a href="#" aria-label="X (Twitter)">X</a>
+      <a href="#" aria-label="Instagram">IG</a>
+      <a href="#" aria-label="YouTube">YT</a>
+    </div>
+  </header>
 
-        
-        
-        
-<div class= "menu">
-    <nav>
-        <h1>
-            <a>Home</a>
-            <a href='about.html'>About</a>
-            <a>Contact</a>
-            <a>Video</a>
-            <a>Image Gallery</a>
-            <a>Government Info</a>
-            <a>Resources</a>
-            <a>Site Map</a>
-        </h1>
-    </nav>
-</div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Video</a></li>
+      <li><a href="#">Image Gallery</a></li>
+      <li><a href="#">Government Info</a></li>
+      <li><a href="#">Resources</a></li>
+      <li><a href="#">Site Map</a></li>
+    </ul>
+  </nav>
 
-    <body>
-<h1> Welcome</h1>
-<h3>The British Values Hub celebrates the principles that shape life in the City of Westminster—democracy, the rule of law, individual liberty, mutual respect, and tolerance of different faiths and beliefs. This app helps residents, students, and visitors explore what these values mean in practice, discover how they influence our local community, and learn how each of us plays a part in upholding them. From the heart of UK government to the diverse neighbourhoods that make Westminster unique, these values guide how we live, work, and grow together.</h3>
-     </body>
-    
+  <main>
+    <section class="content-box">
+      <h1>British Values Hub</h1>
+      <p>
+        The British Values Hub celebrates the principles that shape life in the City of Westminster—
+        democracy, the rule of law, individual liberty, mutual respect, and tolerance of different faiths
+        and beliefs.
+      </p>
+      <p>
+        This app helps residents, students, and visitors explore what these values mean in practice,
+        discover how they influence our local community, and learn how each of us plays a part in
+        upholding them.
+      </p>
+      <p>
+        From the heart of UK government to the diverse neighbourhoods that make Westminster unique,
+        these values guide how we live, work, and grow together.
+      </p>
+    </section>
+
+    <aside class="flag-box">
+      <!-- Placeholder stylised Union Jack -->
+      <div class="flag" aria-label="Union Jack flag"></div>
+    </aside>
+  </main>
+
+  <footer>
+    <h2>Contact</h2>
+    <p>Westminster Media Team</p>
+    <p>Email: mediateam@westminster.gov.uk</p>
+    <p>Phone: 020 7641 6000</p>
+    <p>Address: 64 Victoria Street, London, SW1E 6QP</p>
+  </footer>
+</body>
+</html>
+```
+
+If you want, I can also walk you through turning this into a GitHub Pages site.
