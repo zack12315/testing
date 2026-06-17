@@ -2,172 +2,100 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>British Values – Home</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>British Values</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <title>British Values Hub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
 
-  <div class="main-container">
-    <div class="hero">
-      <div class="hero-text">
-        <h2>Welcome</h2>
-        <p>
-          This website celebrates the core British values that shape life in the United Kingdom:
-          democracy, the rule of law, individual liberty, mutual respect, and tolerance of
-          different faiths and beliefs.
-        </p>
-      </div>
-      <!-- Replace image filenames with your own -->
-      <img src="British Flag.png" alt="British Flag">
-    </div>
+    body {
+      background: #f5f5f5;
+      color: #222;
+      line-height: 1.6;
+    }
 
-    <section>
-      <h2>Core British Values</h2>
-      <ul class="values-list">
-        <li><strong>Democracy:</strong> Everyone has a voice and a vote.</li>
-        <li><strong>Rule of Law:</strong> Laws protect people and are applied fairly.</li>
-        <li><strong>Individual Liberty:</strong> Freedom to make choices and express views.</li>
-        <li><strong>Mutual Respect:</strong> Respecting others, even when we disagree.</li>
-        <li><strong>Tolerance:</strong> Accepting and valuing different faiths and beliefs.</li>
-      </ul>
-    </section>
+    header {
+      background: #00247d;
+      color: #fff;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-    <section>
-      <h2>Why These Values Matter</h2>
-      <p>
-        British values help create a society where people feel safe, included, and able to
-        participate. Schools, communities, and institutions promote these principles to ensure
-        everyone understands their rights and responsibilities.
-      </p>
-    </section>
-  </div>
+    header h1 {
+      margin-bottom: 5px;
+      font-size: 1.8rem;
+    }
 
-  <footer>
-    &copy; 2026 British Values Website
-  </footer>
-</body>
-</html>
+    nav {
+      margin-top: 5px;
+    }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>British Values – About</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>British Values</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
 
-  <div class="main-container">
-    <div class="hero">
-      <div class="hero-text">
-        <h2>About This Site</h2>
-        <p>
-          Our aim is to explain and promote British values in a clear, accessible way for
-          students, teachers, and anyone interested in understanding what underpins life in
-          modern Britain.
-        </p>
-      </div>
-      <!-- Replace with one of your crest/emblem images -->
-      <img src="Westminister Logo.png" alt="City of Westminster Logo">
-    </div>
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-    <section>
-      <h2>Historical Roots</h2>
-      <p>
-        British values have developed over centuries, influenced by documents such as the
-        Magna Carta, the Bill of Rights, and the evolution of Parliament. These milestones
-        helped establish ideas of fairness, representation, and accountability.
-      </p>
-    </section>
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
 
-    <section>
-      <h2>British Values in Everyday Life</h2>
-      <p>
-        In schools, workplaces, and communities, British values guide behaviour and decision
-        making. They encourage people to listen to others, follow rules, stand up for their
-        rights, and respect differences.
-      </p>
-    </section>
+    section {
+      margin-bottom: 40px;
+    }
 
-  
-  <footer>
-    &copy; 2026 British Values Website
-  </footer>
-</body>
-</html>
+    section h2 {
+      margin-bottom: 10px;
+      color: #00247d;
+      font-size: 1.5rem;
+    }
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>British Values – Contact</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>British Values</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    p {
+      margin-bottom: 10px;
+    }
 
-  <div class="main-container">
-    <div class="hero">
-      <div class="hero-text">
-        <h2>Contact Us</h2>
-        <p>
-          Have questions, ideas, or resources to share about British values? Use the form
-          below to get in touch.
-        </p>
-      </div>
-      <!-- Social media / communication themed image -->
-      <img src="social-media-icons.png" alt="Social media icons">
-    </div>
+    ul {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
 
-    <section>
-      <h2>Send a Message</h2>
-      <form action="#" method="post">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" placeholder="Your name">
+    ul li {
+      margin-bottom: 6px;
+    }
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com">
+    .values-list li strong {
+      color: #00247d;
+    }
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
 
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+    .two-column > div {
+      flex: 1 1 280px;
+    }
 
-    <section>
-      <h2>Other Ways to Connect</h2>
-      <p><strong>Email:</strong> info@britishvalues.org</p>
-      <p><strong>Phone:</strong> 0207 000 0000</p>
-      <p><strong>Social Media:</strong> Instagram, TikTok, X</p>
-    </section>
-  </div>
-
-  <footer>
-    &copy; 2026 British Values Website
-  </footer>
-</body>
-</html>
+    .contact-card {
+      background: #f0f4ff;
+      border-left: 4px solid #00247d;
+      padding: 15px;
+      border-radius: 4px;
+      margin-top: 10px
