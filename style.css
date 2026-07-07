@@ -27,6 +27,26 @@ header h1 {
   margin-bottom: 10px;
 }
 
+/* LOGO AREA */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 45px;      /* Adjust size if needed */
+    width: auto;
+    border-radius: 4px; /* Optional: remove if you want sharp edges */
+}
+
+.logo span {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+
 nav {
   margin-top: 10px;
 }
